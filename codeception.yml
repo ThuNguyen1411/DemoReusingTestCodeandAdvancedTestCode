@@ -1,0 +1,13 @@
+paths:
+    tests: tests
+    output: tests/_output
+    data: tests/_data
+    support: tests/_support
+    envs: tests/_envs
+actor_suffix: Tester
+extensions:
+    enabled:
+        - Codeception\Extension\RunFailed
+# To ensure that tests are not depending on each other (unless explicitly declared via @depends) you can enable shuffle option.
+setting:
+    shuffle: true
